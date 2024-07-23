@@ -6,6 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Markmap</title>
     <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      ul[role='list'],
+      ol[role='list'] {
+        list-style: none;
+      }
+
+      html:focus-within {
+        scroll-behavior: smooth;
+      }
+
+      a:not([class]) {
+        text-decoration-skip-ink: auto;
+      }
+
+      img,
+      picture,
+      svg,
+      video,
+      canvas {
+        max-width: 100%;
+        height: auto;
+        vertical-align: middle;
+        font-style: italic;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      input,
+      button,
+      textarea,
+      select {
+        font: inherit;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html:focus-within {
+          scroll-behavior: auto;
+        }
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+          scroll-behavior: auto !important;
+          transition: none;
+        }
+      }
+
+      body,
+      html {
+        height: 100%;
+        scroll-behavior: smooth;
+      }
       svg.markmap {
         width: 100%;
         height: 100vh;
@@ -21,9 +85,9 @@
           maxWidth: 200
           colorFreezeLevel: 2
         ---
-        
+
         # Ingeniería de Software
-        
+
         ## **Cursos de nivelación** ==100000X104== *NIVELACIÓN DE MATEMÁTICA - INGENIERÍA* $\textcolor{cornflowerblue}{CONVALIDADO}$
         ### **Ciclo01** ==100000I0N2== *MATEMÁTICA I* $\textcolor{gold}{EN CURSO}$
         #### **Ciclo02** ==100000S21V== *ESTADÍSTICA DESCRIPTIVA Y PROBABILIDADES* $\textcolor{gold}{EN CURSO}$
@@ -34,7 +98,7 @@
         ###### **Ciclo04** ==100000F2I1== *FUNDAMENTOS DE ELECTROMAGNETISMO* $\textcolor{orange}{PENDIENTE}$
         ###### **Ciclo04** ==100000F2I2== *LABORATORIO DE FUNDAMENTOS DE ELECTROMAGNETISMO* $\textcolor{orange}{PENDIENTE}$
         ###### **Ciclo04** ==100000I1N0== *CÁLCULO II* $\textcolor{orange}{PENDIENTE}$
-        
+
         ## **Cursos de nivelación** ==100000X106== *NIVELACIÓN DE REDACCIÓN* $\textcolor{cornflowerblue}{CONVALIDADO}$
         ### **Ciclo01** ==100000AL01== *COMPRENSIÓN Y REDACCIÓN DE TEXTOS I* $\textcolor{cornflowerblue}{CONVALIDADO}$
         #### **Ciclo03** ==100000N07C== *CIUDADANÍA Y REFLEXIÓN ÉTICA* $\textcolor{orange}{PENDIENTE}$
@@ -43,17 +107,17 @@
         ### **Ciclo01** ==100000N09I== *INDIVIDUO Y MEDIO AMBIENTE* $\textcolor{gold}{EN CURSO}$
         #### **Ciclo02** ==100000A17E== *PROBLEMAS Y DESAFÍOS EN EL PERÚ ACTUAL* $\textcolor{orange}{PENDIENTE}$
         #### **Ciclo03** ==100000N07C== *CIUDADANÍA Y REFLEXIÓN ÉTICA* $\textcolor{orange}{PENDIENTE}$
-        
-        
+
+
         ## **Ciclo01** ==100000N03I== *INGLÉS I* $\textcolor{cornflowerblue}{CONVALIDADO}$
         ### **Ciclo02** ==100000N05I== *INGLÉS II* $\textcolor{cornflowerblue}{CONVALIDADO}$
         #### **Ciclo03** ==100000N08I== *INGLÉS III* $\textcolor{cornflowerblue}{CONVALIDADO}$
         ##### **Ciclo04** ==100000N10I== *INGLÉS IV* $\textcolor{cornflowerblue}{CONVALIDADO}$
-        
-        
+
+
         ## **Ciclo01** ==100000Q01G== *QUÍMICA GENERAL* $\textcolor{gold}{EN CURSO}$
         ## **Ciclo01** ==100000L02Q== *LABORATORIO DE QUÍMICA GENERAL* $\textcolor{gold}{EN CURSO}$
-        
+
         ## **Ciclo01** ==100000VU01== *INTRODUCCIÓN A LA VIDA UNIVERSITARIA* $\textcolor{limegreen}{APROBADO}$
         ### **Ciclo02** ==100000TI50== *INTRODUCCIÓN A LAS TIC* $\textcolor{orange}{PENDIENTE}$
         #### **Ciclo03** ==100000I50N== *TALLER DE PROGRAMACIÓN* $\textcolor{cornflowerblue}{CONVALIDADO}$
@@ -88,44 +152,44 @@
         ######## **Ciclo10** ==100000I64N== *CALIDAD DE SOFTWARE* $\textcolor{orange}{PENDIENTE}$
         ###### **Ciclo05** ==100000TV74== *SISTEMAS OPERATIVOS* $\textcolor{orange}{PENDIENTE}$
         #### **Ciclo03** ==100000S22V== *TEORÍA GENERAL DE SISTEMAS* $\textcolor{orange}{PENDIENTE}$
-        
+
         ## **Ciclo05** ==100000I27N== *ADMINISTRACIÓN Y ORGANIZACIÓN DE EMPRESAS* $\textcolor{orange}{PENDIENTE}$
         ### **Ciclo06** ==100000I60N== *ANÁLISIS Y DISEÑO DE SISTEMAS DE INFORMACIÓN* $\textcolor{orange}{PENDIENTE}$
-        
-        
+
+
         ## **Ciclo05** ==100000I04N== *HERRAMIENTAS INFORMÁTICAS PARA LA TOMA DE DECISIONES* $\textcolor{orange}{PENDIENTE}$
         ### **Ciclo09** ==100000I33N== *GESTIÓN DE PROYECTOS* $\textcolor{orange}{PENDIENTE}$
         #### **Ciclo10** ==100000N12I== *ÉTICA PROFESIONAL* $\textcolor{orange}{PENDIENTE}$
-        
+
         ## ==100000SI21==
         #### **Ciclo10** ==100000N12I== *ÉTICA PROFESIONAL* $\textcolor{orange}{PENDIENTE}$
-        
+
         ## **Ciclo04** ==100000N02C== *INVESTIGACIÓN ACADÉMICA* $\textcolor{orange}{PENDIENTE}$
-        
+
         ## ==100000SI21==
         ### **Ciclo05** ==100000S41V== *PROCESOS PARA INGENIERÍA* $\textcolor{orange}{PENDIENTE}$
         ### **Ciclo03** ==100000S31V== *ESTADÍSTICA INFERENCIAL* $\textcolor{orange}{PENDIENTE}$
-        
+
         ## **Ciclo02** ==100000MC22== *PRINCIPIOS DE ALGORITMOS* $\textcolor{cornflowerblue}{CONVALIDADO}$
         ### **Ciclo03** ==100000I50N== *TALLER DE PROGRAMACIÓN* $\textcolor{cornflowerblue}{CONVALIDADO}$
-        
+
         ## ==100000SI44==
         ### **Ciclo07** ==100000I61N== *SISTEMAS DISTRIBUIDOS* $\textcolor{orange}{PENDIENTE}$
         #### **Ciclo09** ==100000S82F== *CRIPTOGRAFÍA I* $\textcolor{orange}{PENDIENTE}$
-        
-        
+
+
         ## ==100000S51F==
         ### **Ciclo07** ==100000S68F== *TEORÍA DE LENGUAJES DE PROGRAMACIÓN Y MÉTODOS DE TRADUCCIÓN II* $\textcolor{orange}{PENDIENTE}$
-        
+
         ## ==100000S65F==
         ### **Ciclo08** ==100000S08F== *PROGRAMACIÓN DE INTERFASES Y DISPOSITIVOS PERIFÉRICOS* $\textcolor{orange}{PENDIENTE}$
-        
+
         ## ==100000SI72==
         ### **Ciclo09** ==100000N11I== *FORMACIÓN PARA LA EMPLEABILIDAD* $\textcolor{orange}{PENDIENTE}$
-        
+
         ## ==100000SI82==
         ### **Ciclo10** ==100000S15F== *TALLER DE INVESTIGACIÓN - SOFTWARE* $\textcolor{orange}{PENDIENTE}$
-              </script>
+      </script>
     </div>
   </body>
 </html>
